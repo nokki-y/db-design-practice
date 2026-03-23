@@ -31,8 +31,8 @@
 ```bash
 docker compose up -d
 
-# 接続
-PGPASSWORD=postgres psql -h localhost -p 5555 -U postgres -d db_design
+# 接続（接続情報は .env.example を参照）
+psql -h localhost -p 5555 -U postgres -d db_design
 ```
 
 ## 参考文献
