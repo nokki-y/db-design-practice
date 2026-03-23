@@ -1,0 +1,15 @@
+services:
+  db:
+    image: postgres:16
+    container_name: db-design-practice
+    environment:
+      POSTGRES_DB: db_design
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    ports:
+      - "5555:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+
+volumes:
+  pgdata:
